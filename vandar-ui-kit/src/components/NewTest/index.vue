@@ -8,4 +8,5 @@
 
 <script setup lang="ts">
 import './style.scss';
+const salam = ref<number>('salammm')
 </script>
