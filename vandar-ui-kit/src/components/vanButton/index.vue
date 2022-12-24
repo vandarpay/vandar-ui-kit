@@ -9,15 +9,10 @@ import type { PropType } from 'vue'
 const props = defineProps({
   label: { type: String, required: true },
   type: {
-    type: String,
-    validator: function (value) {
-      // The value must match one of these strings
-      return ["text", "outline"].includes(value);
-    },
+    type: String as PropType<"text" | "outline">,
   },
   color: {
     type: String as PropType<"teal" | "neutral" | "red" | "white">,
-
   },
 });
 </script>
