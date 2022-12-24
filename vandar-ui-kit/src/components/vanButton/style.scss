@@ -7,17 +7,8 @@
 }
 
 .btn {
-  $btn: &;
   // default state
-  @apply p-12 text-button-14-semibold;
-
-  &-small {
-    @apply p-12 text-button-12-semibold;
-  }
-
-  &-larg {
-    @apply p-12 text-button-16-semibold;
-  }
+  @apply px-12 py-8 text-button-14-semibold;
 
   &-teal {
     // default state
@@ -34,7 +25,7 @@
       //hover state
       @apply hover:text-teal-600 hover:outline-teal-600;
       //press state
-      @apply active:text-teal-800 active:outline-teal-800;
+      @apply active:bg-opacity-0 active:text-teal-800 active:outline-teal-800;
     }
 
     //teal text button
@@ -48,22 +39,118 @@
     }
   }
 
-  //must be last style to override defualt styles
+  &-red {
+    // default state
+    @apply bg-red-500 text-neutral-25;
+    //hover state
+    @apply hover:bg-red-400;
+    //press state
+    @apply active:bg-red-600;
+
+    // teal outline button
+    @include unify-parent(".btn-outline") {
+      // default state
+      @apply text-red-500 outline-red-500;
+      //hover state
+      @apply hover:text-red-400 hover:outline-red-400;
+      //press state
+      @apply active:bg-red-100 active:text-red-600  active:outline-red-600;
+    }
+
+    //teal text button
+    @include unify-parent(".btn-text") {
+      // default state
+      @apply text-red-500;
+      //hover state
+      @apply hover:text-red-400;
+      //press state
+      @apply active:text-red-600;
+    }
+  }
+
+  &-neutral {
+    // default state
+    @apply bg-neutral-900 text-neutral-25;
+    //hover state
+    @apply hover:bg-neutral-800;
+    //press state
+    @apply active:bg-neutral-700;
+
+    // teal outline button
+    @include unify-parent(".btn-outline") {
+      // default state
+      @apply text-neutral-700 outline-neutral-700;
+      //hover state
+      @apply hover:text-neutral-800 hover:outline-neutral-800;
+      //press state
+      @apply active:bg-neutral-200 active:text-neutral-800  active:outline-neutral-800;
+    }
+
+    //teal text button
+    @include unify-parent(".btn-text") {
+      // default state
+      @apply text-neutral-700;
+      //hover state
+      @apply hover:text-neutral-800;
+      //press state
+      @apply active:text-neutral-900;
+    }
+  }
+
+  &-white {
+    // default state
+    @apply bg-neutral-25 text-neutral-900;
+    //hover state
+    @apply hover:bg-neutral-100;
+    //press state
+    @apply active:bg-neutral-200;
+
+    // teal outline button
+    @include unify-parent(".btn-outline") {
+      // default state
+      @apply text-neutral-25 outline-neutral-25;
+      //hover state
+      @apply hover:text-neutral-100 hover:outline-neutral-100;
+      //press state
+      @apply active:bg-neutral-800 active:text-neutral-200 active:outline-neutral-200;
+    }
+
+    //teal text button
+    @include unify-parent(".btn-text") {
+      // default state
+      @apply text-neutral-25;
+      //hover state
+      @apply hover:text-neutral-100;
+      //press state
+      @apply active:text-neutral-300;
+    }
+  }
+
   &-outline {
     // default state
-    @apply bg-neutral-25  outline outline-offset-[-2px];
+    @apply bg-opacity-0 outline outline-[1.5px] outline-offset-[-1.5px];
     //hover state
-    @apply hover:bg-neutral-25;
-    //press state
-    @apply active:bg-neutral-25;
+    @apply hover:bg-opacity-0;
   }
 
   &-text {
     // default state
-    @apply bg-neutral-25;
+    @apply bg-opacity-0;
     //hover state
-    @apply hover:bg-neutral-25;
+    @apply hover:bg-opacity-0;
     //press state
-    @apply active:bg-neutral-25;
+    @apply active:bg-opacity-0;
+  }
+
+  &-small {
+    @apply px-8 py-4  text-button-12-semibold;
+  }
+
+  &-large {
+    @apply px-16 py-12 text-button-16-semibold;
+
+    @include unify-parent(".btn-outline") {
+      @apply outline-[2px];
+    }
   }
 }
