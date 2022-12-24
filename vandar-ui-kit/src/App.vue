@@ -1,17 +1,19 @@
 <template>
   <div>
     <newTest></newTest>
-    <baseBtn color="teal" label="متن دکمه"></baseBtn>
+    <vanButton class="btn btn-teal" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <baseBtn color="teal" label="متن دکمه" type="outline-teal"></baseBtn>
+    <vanButton class="btn btn-teal" label="متن دکمه"></vanButton>
+    <div class="pt-12"></div>
+    <vanButton class="btn btn-teal-outline" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
 
-    <baseBtn color="teal" label="متن دکمه" type="text-teal"></baseBtn>
+    <vanButton class="btn btn-teal-text" label="متن دکمه"></vanButton>
   </div>
 </template>
 
 <script setup>
 import newTest from './components/NewTest/index.vue'
-import baseBtn from './components/BaseBtn/index.vue'
+import vanButton from './components/vanButton/index.vue'
 
 </script>

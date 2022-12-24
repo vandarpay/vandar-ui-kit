@@ -1,0 +1,43 @@
+.btn {
+  $btn: &;
+  // default state
+  @apply p-12 text-button-14-semibold;
+
+  &-small {
+    @apply p-12 text-button-12-semibold;
+  }
+
+  &-larg {
+    @apply p-12 text-button-16-semibold;
+  }
+
+  &-teal {
+    // default state
+    @apply bg-teal-700 text-neutral-25;
+    //hover state
+    @apply hover:bg-teal-600;
+    //press state
+    @apply active:bg-teal-800;
+
+    @at-root {
+      &-outline {
+        // default state
+        @apply bg-neutral-25 text-teal-700 outline outline-offset-[-2px] outline-teal-700;
+        //hover state
+        @apply hover:bg-neutral-25 hover:text-teal-600 hover:outline-teal-600;
+        //press state
+        @apply active:bg-neutral-25 active:text-teal-800 active:outline-teal-800;
+      }
+    }
+    @at-root {
+      &-text {
+        // default state
+        @apply bg-neutral-25 text-teal-700;
+        //hover state
+        @apply hover:bg-neutral-25 hover:text-teal-600;
+        //press state
+        @apply active:bg-neutral-25 active:text-teal-800;
+      }
+    }
+  }
+}
