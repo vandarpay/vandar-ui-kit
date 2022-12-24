@@ -10,4 +10,3 @@ import newTest from './components/NewTest/index.vue'
 import baseBtn from './components/BaseBtn/index.vue'
 
 </script>
-
