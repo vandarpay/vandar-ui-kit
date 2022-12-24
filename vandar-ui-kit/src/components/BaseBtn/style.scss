@@ -2,7 +2,9 @@
      // default state
      @apply p-12 text-button-16-semibold;
 
-    &-primary{
+     
+
+    &-teal{
         // default state
         @apply bg-teal-700 text-neutral-25;
         //hover state
@@ -12,7 +14,7 @@
 
     }
 
-    &-outline{
+    &-outline-teal{
         // default state
         @apply bg-neutral-25 text-teal-700 outline outline-offset-[-2px] outline-teal-700;
         //hover state
@@ -21,7 +23,7 @@
         @apply active:bg-neutral-25 active:text-teal-800 active:outline-teal-800;
     }
 
-    &-text{
+    &-text-teal{
         // default state
         @apply bg-neutral-25 text-teal-700;
         //hover state

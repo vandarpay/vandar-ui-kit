@@ -1,7 +1,12 @@
 <template>
   <div>
     <newTest></newTest>
-    <baseBtn color="primary" label="متن دکمه" type="text"></baseBtn>
+    <baseBtn color="teal" label="متن دکمه"></baseBtn>
+    <div class="pt-12"></div>
+    <baseBtn color="teal" label="متن دکمه" type="outline-teal"></baseBtn>
+    <div class="pt-12"></div>
+
+    <baseBtn color="teal" label="متن دکمه" type="text-teal"></baseBtn>
   </div>
 </template>
 
