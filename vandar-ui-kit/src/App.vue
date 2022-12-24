@@ -7,9 +7,9 @@
     <div class="pt-12"></div>
     <vanButton class="btn btn-teal btn-small" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-teal btn-outline btn-large" label="متن دکمه"></vanButton>
+    <vanButton class="btn btn-teal btn-outline btn-large  btn-disabled" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-teal btn-text" label="متن دکمه"></vanButton>
+    <vanButton class="btn btn-teal btn-text  btn-disabled" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
     <vanButton class="btn btn-red btn-large" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
