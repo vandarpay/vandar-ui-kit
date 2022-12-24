@@ -1,7 +1,7 @@
 <template>
   <div class="p-12">
     <newTest></newTest>
-    <vanButton class="btn btn-teal btn-large" label="متن دکمه"></vanButton>
+    <vanButton class="btn btn-teal btn-large btn-disabled" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
     <vanButton class="btn btn-teal" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>

@@ -25,7 +25,7 @@
       //hover state
       @apply hover:text-teal-600 hover:outline-teal-600;
       //press state
-      @apply active:bg-opacity-0 active:text-teal-800 active:outline-teal-800;
+      @apply  active:text-teal-800 active:outline-teal-800;
     }
 
     //teal text button
@@ -151,6 +151,39 @@
 
     @include unify-parent(".btn-outline") {
       @apply outline-[2px];
+    }
+  }
+
+  &-disabled {
+    // default state
+    @apply pointer-events-none bg-neutral-100 text-neutral-400;
+    // hover state
+    @apply hover:bg-neutral-100 hover:text-neutral-400;
+    // active state
+    @apply active:bg-neutral-100 active:text-neutral-400;
+    // dark mode
+    @apply dark:bg-neutral-100 dark:text-neutral-500;
+
+    @include unify-parent(".btn-outline") {
+     // default state
+     @apply text-neutral-400;
+     // hover state
+     @apply hover:text-neutral-400;
+     // active state
+     @apply  active:text-neutral-400;
+     // dark mode
+     @apply  dark:text-neutral-700 dark:outline-neutral-700;
+    }
+
+    @include unify-parent(".btn-outline") {
+      // default state
+      @apply text-neutral-400;
+      // hover state
+      @apply hover:text-neutral-400;
+      // active state
+      @apply  active:text-neutral-400;
+      // dark mode
+      @apply  dark:text-neutral-700;
     }
   }
 }
