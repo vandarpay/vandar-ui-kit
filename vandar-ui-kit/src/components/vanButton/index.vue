@@ -1,5 +1,5 @@
 <template>
-  <button :class="`btn btn-${color} btn-${type}`">{{ label }}</button>
+  <button :class="`btn btn-${color} btn-${type}`" :disabled="disabled">{{ label }}</button>
 </template>
 
 <script lang="ts" setup>
@@ -13,6 +13,9 @@ const props = defineProps({
   },
   color: {
     type: String as PropType<"teal" | "neutral" | "red" | "white">,
+  },
+  disabled: {
+    type: Boolean,
   },
 });
 </script>

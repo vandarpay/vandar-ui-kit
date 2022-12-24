@@ -1,15 +1,15 @@
 <template>
   <div class="p-12">
     <newTest></newTest>
-    <vanButton class="btn btn-teal btn-large btn-disabled" label="متن دکمه"></vanButton>
+    <vanButton class="btn btn-teal btn-large" disabled label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
     <vanButton class="btn btn-teal" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
     <vanButton class="btn btn-teal btn-small" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-teal btn-outline btn-large  btn-disabled" label="متن دکمه"></vanButton>
+    <vanButton class="btn btn-teal btn-outline btn-large" disabled label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-teal btn-text  btn-disabled" label="متن دکمه"></vanButton>
+    <vanButton class="btn btn-teal btn-text" disabled label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
     <vanButton class="btn btn-red btn-large" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>

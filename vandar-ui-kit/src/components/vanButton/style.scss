@@ -11,7 +11,8 @@
   @apply px-12 py-8 text-button-14-semibold;
 
   &-teal {
-    &:not(.btn-outline, .btn-text, .btn-disabled) {
+     // default button
+    &:not(.btn-outline, .btn-text, [disabled]) {
       // default state
       @apply bg-teal-700 text-neutral-25;
       //hover state
@@ -22,7 +23,7 @@
 
     // teal outline button
     @include unify-parent(".btn-outline") {
-      &:not(.btn-disabled) {
+      &:not([disabled]) {
         // default state
         @apply text-teal-700 outline-teal-700;
         //hover state
@@ -34,7 +35,7 @@
 
     //teal text button
     @include unify-parent(".btn-text") {
-      &:not(.btn-disabled) {
+      &:not([disabled]) {
         // default state
         @apply text-teal-700;
         //hover state
@@ -46,7 +47,8 @@
   }
 
   &-red {
-    &:not(.btn-outline, .btn-text, .btn-disabled) {
+     // default button
+    &:not(.btn-outline, .btn-text, [disabled]) {
       // default state
       @apply bg-red-500 text-neutral-25;
       //hover state
@@ -57,7 +59,7 @@
 
     // red outline button
     @include unify-parent(".btn-outline") {
-      &:not(.btn-disabled) {
+      &:not([disabled]) {
         // default state
         @apply text-red-500 outline-red-500;
         //hover state
@@ -69,7 +71,7 @@
 
     //red text button
     @include unify-parent(".btn-text") {
-      &:not(.btn-disabled) {
+      &:not([disabled]) {
         // default state
         @apply text-red-500;
         //hover state
@@ -81,7 +83,8 @@
   }
 
   &-neutral {
-    &:not(.btn-outline, .btn-text, .btn-disabled) {
+     // default button
+    &:not(.btn-outline, .btn-text, [disabled]) {
       // default state
       @apply bg-neutral-900 text-neutral-25;
       //hover state
@@ -92,7 +95,7 @@
 
     // neutral outline button
     @include unify-parent(".btn-outline") {
-      &:not(.btn-disabled) {
+      &:not([disabled]) {
         // default state
         @apply text-neutral-700 outline-neutral-700;
         //hover state
@@ -114,7 +117,8 @@
   }
 
   &-white {
-    &:not(.btn-outline, .btn-text, .btn-disabled) {
+     // default button
+    &:not(.btn-outline, .btn-text, [disabled]) {
       // default state
       @apply bg-neutral-25 text-neutral-900;
       //hover state
@@ -125,7 +129,7 @@
 
     // white outline button
     @include unify-parent(".btn-outline") {
-      &:not(.btn-disabled) {
+      &:not([disabled]) {
         // default state
         @apply text-neutral-25 outline-neutral-25;
         //hover state
@@ -163,7 +167,7 @@
     @apply px-16 py-12 text-button-16-semibold;
   }
 
-  &-disabled {
+  &[disabled] {
     &:not(.btn-outline, .btn-text) {
       @apply bg-neutral-100;
     }
