@@ -4,6 +4,7 @@
 
 <script lang="ts" setup>
 import "./style.scss";
+import type { PropType } from 'vue'
 
 const props = defineProps({
   label: { type: String, required: true },
@@ -15,11 +16,8 @@ const props = defineProps({
     },
   },
   color: {
-    type: String,
-    validator: function (value) {
-      // The value must match one of these strings
-      return ["teal", "neutral", "red", "white"].includes(value);
-    },
+    type: String as PropType<"teal" | "neutral" | "red" | "white">,
+
   },
 });
 </script>
