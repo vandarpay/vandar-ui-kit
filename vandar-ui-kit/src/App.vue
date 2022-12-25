@@ -7,7 +7,7 @@
     <div class="pt-12"></div>
     <vanButton size="small" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton size="large" type="outline" label="متن دکمه"></vanButton>
+    <vanButton size="large" type="outlined" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
     <vanButton type="ghost" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
@@ -17,9 +17,9 @@
     <div class="pt-12"></div>
     <vanButton size="small" color="red" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton type="outline" color="red" label="متن دکمه"></vanButton>
+    <vanButton type="outlined" color="red" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton type="outline" size="small" color="red" label="متن دکمه"></vanButton>
+    <vanButton type="outlined" size="small" color="red" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
     <vanButton type="ghost" color="red" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
@@ -40,7 +40,7 @@
     <div class="pt-12"></div>
     <vanButton size="small" color="white"  label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton type="outline" color="white"  label="متن دکمه"></vanButton>
+    <vanButton type="outlined" color="white"  label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
     <vanButton type="ghost" color="white"  label="متن دکمه"></vanButton>
 </div>

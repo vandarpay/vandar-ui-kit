@@ -16,7 +16,7 @@ export default {
     },
     type: {
       control: 'select' ,
-      options: ["fill" , "ghost" , "outline"],
+      options: ["fill" , "ghost" , "outlined"],
     },
   },
 };

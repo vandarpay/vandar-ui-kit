@@ -23,8 +23,8 @@
       }
     }
 
-    // teal outline button
-    @include unify-parent(".btn-outline") {
+    // teal outlined button
+    @include unify-parent(".btn-outlined") {
       &:not([disabled]) {
         // default state
         @apply text-teal-700 outline-teal-700;
@@ -62,7 +62,7 @@
     }
 
     // red outline button
-    @include unify-parent(".btn-outline") {
+    @include unify-parent(".btn-outlined") {
       &:not([disabled]) {
         // default state
         @apply text-red-500 outline-red-500;
@@ -99,8 +99,8 @@
       }
     }
 
-    // neutral outline button
-    @include unify-parent(".btn-outline") {
+    // neutral outlined button
+    @include unify-parent(".btn-outlined") {
       &:not([disabled]) {
         // default state
         @apply text-neutral-700 outline-neutral-700;
@@ -135,8 +135,8 @@
       @apply disabled:text-neutral-500;
     }
 
-    // white outline button
-    @include unify-parent(".btn-outline") {
+    // white outlined button
+    @include unify-parent(".btn-outlined") {
       // default state
       @apply text-neutral-25 outline-neutral-25;
       //hover state
@@ -160,7 +160,7 @@
     }
   }
 
-  &-outline {
+  &-outlined {
     // default state
     @apply outline;
     //disabled state
