@@ -8,7 +8,7 @@
 
 .btn {
   @apply relative;
-  
+
   &-teal {
     @include unify-parent(".btn-fill") {
       // default button
@@ -182,16 +182,16 @@
   }
 
   &-small {
-    @apply px-8 py-4 text-button-12-semibold;
+    @apply px-8 py-4 text-button-12-semibold min-w-[80px];
   }
 
   &-medium {
     // default state
-    @apply px-12 py-8 text-button-14-semibold;
+    @apply px-12 py-8 text-button-14-semibold min-w-[96px];
   }
 
   &-large {
-    @apply px-16 py-12 text-button-16-semibold;
+    @apply px-16 py-12 text-button-16-semibold min-w-[120px];
   }
 
   // default diabled state
