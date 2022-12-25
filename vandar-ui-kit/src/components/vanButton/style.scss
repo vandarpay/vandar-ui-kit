@@ -7,18 +7,17 @@
 }
 
 .btn {
-  // default state
-  @apply relative px-12 py-8 text-button-14-semibold;
-
   &-teal {
-    // default button
-    &:not(.btn-outline, .btn-text, [disabled]) {
-      // default state
-      @apply bg-teal-700 text-neutral-25;
-      //hover state
-      @apply hover:bg-teal-600;
-      //press state
-      @apply active:bg-teal-800;
+    @include unify-parent(".btn-fill") {
+      // default button
+      &:not([disabled]) {
+        // default state
+        @apply bg-teal-700 text-neutral-25;
+        //hover state
+        @apply hover:bg-teal-600;
+        //press state
+        @apply active:bg-teal-800;
+      }
     }
 
     // teal outline button
@@ -47,14 +46,16 @@
   }
 
   &-red {
-    // default button
-    &:not(.btn-outline, .btn-text, [disabled]) {
-      // default state
-      @apply bg-red-500 text-neutral-25;
-      //hover state
-      @apply hover:bg-red-400;
-      //press state
-      @apply active:bg-red-600;
+    @include unify-parent(".btn-fill") {
+      // default button
+      &:not([disabled]) {
+        // default state
+        @apply bg-red-500 text-neutral-25;
+        //hover state
+        @apply hover:bg-red-400;
+        //press state
+        @apply active:bg-red-600;
+      }
     }
 
     // red outline button
@@ -83,14 +84,16 @@
   }
 
   &-neutral {
-    // default button
-    &:not(.btn-outline, .btn-text, [disabled]) {
-      // default state
-      @apply bg-neutral-900 text-neutral-25;
-      //hover state
-      @apply hover:bg-neutral-800;
-      //press state
-      @apply active:bg-neutral-700;
+    @include unify-parent(".btn-fill") {
+      // default button
+      &:not([disabled]) {
+        // default state
+        @apply bg-neutral-900 text-neutral-25;
+        //hover state
+        @apply hover:bg-neutral-800;
+        //press state
+        @apply active:bg-neutral-700;
+      }
     }
 
     // neutral outline button
@@ -117,28 +120,28 @@
   }
 
   &-white {
-    // default button
-    &:not(.btn-outline, .btn-text) {
+    @include unify-parent(".btn-fill") {
+      // default button
       // default state
       @apply bg-neutral-25 text-neutral-900;
       //hover state
       @apply hover:bg-neutral-100;
       //press state
       @apply active:bg-neutral-200;
-       //disabled
-       @apply disabled:text-neutral-500;
+      //disabled
+      @apply disabled:text-neutral-500;
     }
 
     // white outline button
     @include unify-parent(".btn-outline") {
-        // default state
-        @apply text-neutral-25 outline-neutral-25;
-        //hover state
-        @apply hover:text-neutral-100 hover:outline-neutral-100;
-        //press state
-        @apply active:bg-neutral-800 active:text-neutral-200 active:outline-neutral-200;
-        //disabled
-        @apply disabled:text-neutral-700 disabled:outline-neutral-700;
+      // default state
+      @apply text-neutral-25 outline-neutral-25;
+      //hover state
+      @apply hover:text-neutral-100 hover:outline-neutral-100;
+      //press state
+      @apply active:bg-neutral-800 active:text-neutral-200 active:outline-neutral-200;
+      //disabled
+      @apply disabled:text-neutral-700 disabled:outline-neutral-700;
     }
 
     //white text button
@@ -167,6 +170,11 @@
 
   &-small {
     @apply px-8 py-4  text-button-12-semibold;
+  }
+
+  &-medium {
+    // default state
+    @apply relative px-12 py-8 text-button-14-semibold;
   }
 
   &-large {
