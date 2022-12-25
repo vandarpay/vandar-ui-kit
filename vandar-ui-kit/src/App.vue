@@ -1,46 +1,46 @@
 <template>
-  <div class="p-12">
-    <newTest></newTest>
-    <vanButton class="btn btn-teal btn-large" disabled label="متن دکمه"></vanButton>
+  <div class="p-12 dark:bg-neutral-900">
+    <newTest></newTest> 
+    <vanButton size="large" :loading="true" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-teal" label="متن دکمه"></vanButton>
+    <vanButton  label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-teal btn-small" label="متن دکمه"></vanButton>
+    <vanButton size="small" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-teal btn-outline btn-large" disabled label="متن دکمه"></vanButton>
+    <vanButton size="large" type="outline" disabled label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-teal btn-text" disabled label="متن دکمه"></vanButton>
+    <vanButton type="text" disabled label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-red btn-large" label="متن دکمه"></vanButton>
+    <vanButton size="large" color="red" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-red" label="متن دکمه"></vanButton>
+    <vanButton color="red" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-red btn-small" label="متن دکمه"></vanButton>
+    <vanButton size="small" color="red" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-red btn-outline" label="متن دکمه"></vanButton>
+    <vanButton type="outline" color="red" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-red btn-text" label="متن دکمه"></vanButton>
+    <vanButton type="text" color="red" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-neutral btn-large" label="متن دکمه"></vanButton>
+    <vanButton size="large" color="neutral" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-neutral" label="متن دکمه"></vanButton>
+    <vanButton color="neutral" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-neutral btn-small" label="متن دکمه"></vanButton>
+    <vanButton size="small" color="neutral"  label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-neutral btn-outline btn-small" label="متن دکمه"></vanButton>
+    <vanButton size="small" color="neutral" type="text" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-neutral btn-text" label="متن دکمه"></vanButton>
+    <vanButton type="text" color="neutral"  label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
 <div class="bg-neutral-900 p-24">
-  <vanButton class="btn btn-white btn-large" label="متن دکمه"></vanButton>
+  <vanButton size="large" color="white" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-white" label="متن دکمه"></vanButton>
+    <vanButton color="white"  label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-white btn-small" label="متن دکمه"></vanButton>
+    <vanButton size="small" color="white"  label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-white btn-outline" label="متن دکمه"></vanButton>
+    <vanButton type="outline" color="white"  label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton class="btn btn-white btn-text" label="متن دکمه"></vanButton>
+    <vanButton type="text" color="white"  label="متن دکمه"></vanButton>
 </div>
   </div>
 </template>
