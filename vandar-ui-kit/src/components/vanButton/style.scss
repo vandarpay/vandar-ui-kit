@@ -7,6 +7,8 @@
 }
 
 .btn {
+  @apply relative;
+  
   &-teal {
     @include unify-parent(".btn-fill") {
       // default button
@@ -159,22 +161,33 @@
 
   &-outline {
     // default state
-    @apply outline outline-[1.5px] outline-offset-[-1.5px];
+    @apply outline;
     //disabled state
     @apply disabled:outline-neutral-400;
 
+    @include unify-parent(".btn-small") {
+    // default state
+    @apply outline-[1.5px] outline-offset-[-1.5px];
+    }
+
+    @include unify-parent(".btn-medium") {
+      // default state
+      @apply outline-[1.5px] outline-offset-[-1.5px];
+      }
+
+      
     @include unify-parent(".btn-large") {
       @apply outline-[2px] -outline-offset-2;
     }
   }
 
   &-small {
-    @apply px-8 py-4  text-button-12-semibold;
+    @apply px-8 py-4 text-button-12-semibold;
   }
 
   &-medium {
     // default state
-    @apply relative px-12 py-8 text-button-14-semibold;
+    @apply px-12 py-8 text-button-14-semibold;
   }
 
   &-large {

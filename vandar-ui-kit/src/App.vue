@@ -19,6 +19,8 @@
     <div class="pt-12"></div>
     <vanButton type="outline" color="red" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
+    <vanButton type="outline" size="small" color="red" label="متن دکمه"></vanButton>
+    <div class="pt-12"></div>
     <vanButton type="text" color="red" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
     <vanButton size="large" color="neutral" label="متن دکمه"></vanButton>
