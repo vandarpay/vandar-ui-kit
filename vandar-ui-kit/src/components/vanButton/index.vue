@@ -1,5 +1,5 @@
 <template>
-  <button :class="`btn btn-${color} btn-${type} btn-${size} ${loadingState}`" :disabled="disabled || loading">
+  <button :class="[`btn btn-${color} btn-${type} btn-${size}`,{'loading':loading}]" :disabled="disabled || loading">
      <span :class="{'opacity-0':loading}">
       {{ label }}
      </span>
@@ -18,21 +18,21 @@ const props = defineProps({
   type: {
     default: 'fill',
     type: String as PropType<"fill" | "text" | "outline">,
-    validator: (value) => {
+    validator: (value:string) => {
       return ["fill" , "text" , "outline"].includes(value)
     }
   },
   color: {
     default:'teal',
     type: String as PropType<"teal" | "neutral" | "red" | "white">,
-    validator: (value) => {
+    validator: (value:string) => {
       return ["teal" , "neutral" , "red",  "white"].includes(value)
     }
   },
   size: {
     default:'medium',
     type: String as PropType<"large" | "medium" | "small">,
-    validator: (value) => {
+    validator: (value:string) => {
       return ["large" , "medium" , "small"].includes(value)
     }
   },
@@ -44,8 +44,5 @@ const props = defineProps({
   },
 });
 
-const loadingState = computed(() => {
-    return props.loading ? 'loading' : ''
-})
 
 </script>
