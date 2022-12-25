@@ -7,9 +7,9 @@
     <div class="pt-12"></div>
     <vanButton size="small" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton size="large" type="outline" disabled label="متن دکمه"></vanButton>
+    <vanButton size="large" type="outline" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton type="text" disabled label="متن دکمه"></vanButton>
+    <vanButton type="ghost" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
     <vanButton size="large" color="red" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
@@ -21,7 +21,7 @@
     <div class="pt-12"></div>
     <vanButton type="outline" size="small" color="red" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton type="text" color="red" label="متن دکمه"></vanButton>
+    <vanButton type="ghost" color="red" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
     <vanButton size="large" color="neutral" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
@@ -29,9 +29,9 @@
     <div class="pt-12"></div>
     <vanButton size="small" color="neutral"  label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton size="small" color="neutral" type="text" label="متن دکمه"></vanButton>
+    <vanButton size="small" color="neutral" type="ghost" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton type="text" color="neutral"  label="متن دکمه"></vanButton>
+    <vanButton type="ghost" color="neutral"  label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
 <div class="bg-neutral-900 p-24">
   <vanButton size="large" color="white" label="متن دکمه"></vanButton>
@@ -42,7 +42,7 @@
     <div class="pt-12"></div>
     <vanButton type="outline" color="white"  label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton type="text" color="white"  label="متن دکمه"></vanButton>
+    <vanButton type="ghost" color="white"  label="متن دکمه"></vanButton>
 </div>
   </div>
 </template>

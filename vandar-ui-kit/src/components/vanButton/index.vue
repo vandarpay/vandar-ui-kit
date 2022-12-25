@@ -17,9 +17,9 @@ const props = defineProps({
   label: { type: String, required: true },
   type: {
     default: 'fill',
-    type: String as PropType<"fill" | "text" | "outline">,
+    type: String as PropType<"fill" | "ghost" | "outline">,
     validator: (value:string) => {
-      return ["fill" , "text" , "outline"].includes(value)
+      return ["fill" , "ghost" , "outline"].includes(value)
     }
   },
   color: {

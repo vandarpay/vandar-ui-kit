@@ -1,3 +1,4 @@
+
 @use "sass:selector";
 
 @mixin unify-parent($child) {
@@ -34,8 +35,8 @@
       }
     }
 
-    //teal text button
-    @include unify-parent(".btn-text") {
+    //teal ghost button
+    @include unify-parent(".btn-ghost") {
       &:not([disabled]) {
         // default state
         @apply text-teal-700;
@@ -73,7 +74,7 @@
     }
 
     //red text button
-    @include unify-parent(".btn-text") {
+    @include unify-parent(".btn-ghost") {
       &:not([disabled]) {
         // default state
         @apply text-red-500;
@@ -111,7 +112,7 @@
     }
 
     //neutral text button
-    @include unify-parent(".btn-text") {
+    @include unify-parent(".btn-ghost") {
       // default state
       @apply text-neutral-700;
       //hover state
@@ -146,8 +147,8 @@
       @apply disabled:text-neutral-700 disabled:outline-neutral-700;
     }
 
-    //white text button
-    @include unify-parent(".btn-text") {
+    //white ghost button
+    @include unify-parent(".btn-ghost") {
       // default state
       @apply text-neutral-25;
       //hover state
@@ -195,7 +196,7 @@
   }
 
   // default diabled state
-  &:not(.btn-outline, .btn-text) {
+  &:not(.btn-outline, .btn-ghost) {
     @apply disabled:bg-neutral-100;
   }
   @apply disabled:pointer-events-none disabled:text-neutral-400;
