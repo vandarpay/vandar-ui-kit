@@ -1,4 +1,3 @@
-import FirstTest from './NewTest/index.vue'
-import SecondTest from './SecondTest/index.vue'
+import VanButton from './Button/index.vue'
 
-export default {FirstTest, SecondTest}
+export default {VanButton}
