@@ -7,16 +7,16 @@ export default {
   argTypes: {
     onClick: {},
     color: {
-      control: 'select' ,
-      options: ["teal" , "neutral" , "red",  "white"],
+      control: 'select',
+      options: ["teal", "neutral", "red", "white"],
     },
     size: {
-      control: 'select' ,
+      control: 'select',
       options: ['small', 'medium', 'large'],
     },
     type: {
-      control: 'select' ,
-      options: ["fill" , "ghost" , "outlined"],
+      control: 'select',
+      options: ["fill", "ghost", "outlined"],
     },
   },
 };
@@ -24,10 +24,14 @@ export default {
 // templates
 const Template = (args) => ({
   // Components 
-  components: { vanButton },
+  components: {
+    vanButton
+  },
   //  map
   setup() {
-    return { args };
+    return {
+      args
+    };
   },
   // bound
   template: '<van-button v-bind="args" />',
@@ -36,8 +40,10 @@ const Template = (args) => ({
 export const button = Template.bind({});
 // args
 button.args = {
+  size: 'medium',
+  type: 'fill',
+  color: 'teal',
   disabled: false,
   loading: false,
   label: 'متن دکمه',
 };
-
