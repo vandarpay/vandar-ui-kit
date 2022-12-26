@@ -7,11 +7,11 @@
   }
 }
 
-.btn {
+.van-btn {
   @apply relative;
 
   &-teal {
-    @include unify-parent(".btn-fill") {
+    @include unify-parent(".van-btn-fill") {
       // default button
       &:not([disabled]) {
         // default state
@@ -24,7 +24,7 @@
     }
 
     // teal outlined button
-    @include unify-parent(".btn-outlined") {
+    @include unify-parent(".van-btn-outlined") {
       &:not([disabled]) {
         // default state
         @apply text-teal-700 outline-teal-700;
@@ -36,7 +36,7 @@
     }
 
     //teal ghost button
-    @include unify-parent(".btn-ghost") {
+    @include unify-parent(".van-btn-ghost") {
       &:not([disabled]) {
         // default state
         @apply text-teal-700;
@@ -49,7 +49,7 @@
   }
 
   &-red {
-    @include unify-parent(".btn-fill") {
+    @include unify-parent(".van-btn-fill") {
       // default button
       &:not([disabled]) {
         // default state
@@ -62,7 +62,7 @@
     }
 
     // red outline button
-    @include unify-parent(".btn-outlined") {
+    @include unify-parent(".van-btn-outlined") {
       &:not([disabled]) {
         // default state
         @apply text-red-500 outline-red-500;
@@ -74,7 +74,7 @@
     }
 
     //red text button
-    @include unify-parent(".btn-ghost") {
+    @include unify-parent(".van-btn-ghost") {
       &:not([disabled]) {
         // default state
         @apply text-red-500;
@@ -87,7 +87,7 @@
   }
 
   &-neutral {
-    @include unify-parent(".btn-fill") {
+    @include unify-parent(".van-btn-fill") {
       // default button
       &:not([disabled]) {
         // default state
@@ -100,7 +100,7 @@
     }
 
     // neutral outlined button
-    @include unify-parent(".btn-outlined") {
+    @include unify-parent(".van-btn-outlined") {
       &:not([disabled]) {
         // default state
         @apply text-neutral-700 outline-neutral-700;
@@ -112,7 +112,7 @@
     }
 
     //neutral text button
-    @include unify-parent(".btn-ghost") {
+    @include unify-parent(".van-btn-ghost") {
       // default state
       @apply text-neutral-700;
       //hover state
@@ -123,7 +123,7 @@
   }
 
   &-white {
-    @include unify-parent(".btn-fill") {
+    @include unify-parent(".van-btn-fill") {
       // default button
       // default state
       @apply bg-neutral-25 text-neutral-900;
@@ -136,7 +136,7 @@
     }
 
     // white outlined button
-    @include unify-parent(".btn-outlined") {
+    @include unify-parent(".van-btn-outlined") {
       // default state
       @apply text-neutral-25 outline-neutral-25;
       //hover state
@@ -148,7 +148,7 @@
     }
 
     //white ghost button
-    @include unify-parent(".btn-ghost") {
+    @include unify-parent(".van-btn-ghost") {
       // default state
       @apply text-neutral-25;
       //hover state
@@ -166,18 +166,18 @@
     //disabled state
     @apply disabled:outline-neutral-400;
 
-    @include unify-parent(".btn-small") {
+    @include unify-parent(".van-btn-small") {
     // default state
     @apply outline-[1.5px] outline-offset-[-1.5px];
     }
 
-    @include unify-parent(".btn-medium") {
+    @include unify-parent(".van-btn-medium") {
       // default state
       @apply outline-[1.5px] outline-offset-[-1.5px];
       }
 
       
-    @include unify-parent(".btn-large") {
+    @include unify-parent(".van-btn-large") {
       @apply outline-[2px] -outline-offset-2;
     }
   }
@@ -196,7 +196,7 @@
   }
 
   // default diabled state
-  &:not(.btn-outline, .btn-ghost) {
+  &:not(.van-btn-outline, .van-btn-ghost) {
     @apply disabled:bg-neutral-100;
   }
   @apply disabled:pointer-events-none disabled:text-neutral-400;

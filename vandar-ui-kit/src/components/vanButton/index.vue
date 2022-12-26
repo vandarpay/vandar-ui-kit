@@ -3,11 +3,13 @@
      <span :class="{'opacity-0':loading}">
       {{ label }}
      </span>
+     <i v-if="beforeIcon?.lenght" :class="`ri-${beforeIcon}-${iconType} van-icon`"></i>
     <div v-if="loading" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
     <img class="animate-spin" src="../../assets/svg/loading.svg"/>
     </div>
   </button>
 </template>
+
 <script lang="ts" setup>
 import "./style.scss";
 import type { PropType } from "vue";
