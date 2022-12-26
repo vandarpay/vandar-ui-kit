@@ -6,7 +6,7 @@
 
     <vanButton size="large" :loading="true" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton label="متن دکمه"></vanButton>
+    <vanButton :after-icon="'arrow-left'"></vanButton>
     <div class="pt-12"></div>
     <vanButton size="small" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
@@ -14,11 +14,11 @@
     <div class="pt-12"></div>
     <vanButton type="ghost" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton size="large" color="red" label="متن دکمه"></vanButton>
+    <vanButton size="large" color="red" label="متن دکمه" :before-icon="'arrow-right'"  :after-icon="'arrow-left'"></vanButton>
     <div class="pt-12"></div>
-    <vanButton color="red" label="متن دکمه"></vanButton>
+    <vanButton color="red" label="متن دکمه" :before-icon="'arrow-right'"  :after-icon="'arrow-left'"></vanButton>
     <div class="pt-12"></div>
-    <vanButton size="small" color="red" label="متن دکمه"></vanButton>
+    <vanButton size="small" color="red" label="متن دکمه" :before-icon="'arrow-right'"  :after-icon="'arrow-left'"></vanButton>
     <div class="pt-12"></div>
     <vanButton type="outlined" color="red" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>

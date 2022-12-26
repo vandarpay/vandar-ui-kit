@@ -183,16 +183,32 @@
   }
 
   &-small {
-    @apply px-8 py-4 text-button-12-semibold min-w-[80px];
+    @apply px-8 text-button-12-semibold min-w-[80px] h-[28px];
+    .van-icon{
+      width: 14px;
+      height: 14px;
+      font-size: 10px; 
+    }
   }
 
   &-medium {
     // default state
-    @apply px-12 py-8 text-button-14-semibold min-w-[96px];
+    @apply px-12 text-button-14-semibold min-w-[96px] h-[40px];
+    .van-icon{
+      width: 16px;
+      height: 16px;
+      font-size: 11px; 
+    }
   }
 
   &-large {
-    @apply px-16 py-12 text-button-16-semibold min-w-[120px];
+    @apply px-16 text-button-16-semibold min-w-[120px] h-[48px];
+
+    .van-icon{
+      width: 20px;
+      height: 20px;
+      font-size: 14px; 
+    }
   }
 
   // default diabled state
@@ -200,4 +216,10 @@
     @apply disabled:bg-neutral-100;
   }
   @apply disabled:pointer-events-none disabled:text-neutral-400;
+
+  .van-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
 }
