@@ -18,6 +18,16 @@ export default {
       control: 'select',
       options: ["fill", "ghost", "outlined"],
     },
+    iconType: {
+      control: 'select',
+      options: ["line" , "fill"],
+    },
+    beforeIcon: {
+      control: 'string'
+    },
+    afterIcon: {
+      control: 'string'
+    }
   },
 };
 
@@ -43,6 +53,9 @@ button.args = {
   size: 'medium',
   type: 'fill',
   color: 'teal',
+  iconType: 'line',
+  beforeIcon: 'arrow-left',
+  afterIcon: 'arrow-right',
   disabled: false,
   loading: false,
   label: 'متن دکمه',

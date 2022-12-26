@@ -29,9 +29,9 @@
         // default state
         @apply text-teal-700 outline-teal-700;
         //hover state
-        @apply hover:text-teal-600 hover:outline-teal-600;
+        @apply hover:bg-teal-25 hover:text-teal-600 hover:outline-teal-600;
         //press state
-        @apply active:text-teal-800 active:outline-teal-800;
+        @apply active:bg-teal-100 active:text-teal-800 active:outline-teal-800;
       }
     }
 
@@ -41,9 +41,9 @@
         // default state
         @apply text-teal-700;
         //hover state
-        @apply hover:text-teal-600;
+        @apply hover:bg-teal-25 hover:text-teal-600;
         //press state
-        @apply active:text-teal-800;
+        @apply active:bg-teal-100 active:text-teal-800;
       }
     }
   }
@@ -67,9 +67,9 @@
         // default state
         @apply text-red-500 outline-red-500;
         //hover state
-        @apply hover:text-red-400 hover:outline-red-400;
+        @apply hover:bg-red-50 hover:text-red-400 hover:outline-red-400;
         //press state
-        @apply active:bg-red-100 active:text-red-600  active:outline-red-600;
+        @apply active:bg-red-100 active:bg-red-100 active:text-red-600  active:outline-red-600;
       }
     }
 
@@ -79,9 +79,9 @@
         // default state
         @apply text-red-500;
         //hover state
-        @apply hover:text-red-400;
+        @apply hover:bg-red-50 hover:text-red-400;
         //press state
-        @apply active:text-red-600;
+        @apply active:bg-red-100 active:text-red-600;
       }
     }
   }
@@ -103,22 +103,22 @@
     @include unify-parent(".van-btn-outlined") {
       &:not([disabled]) {
         // default state
-        @apply text-neutral-700 outline-neutral-700;
+        @apply text-neutral-900 outline-neutral-900;
         //hover state
-        @apply hover:text-neutral-800 hover:outline-neutral-800;
+        @apply hover:bg-neutral-50 hover:text-neutral-800 hover:outline-neutral-800;
         //press state
-        @apply active:bg-neutral-200 active:text-neutral-800  active:outline-neutral-800;
+        @apply active:bg-neutral-100 active:bg-neutral-200 active:text-neutral-700  active:outline-neutral-700;
       }
     }
 
     //neutral text button
     @include unify-parent(".van-btn-ghost") {
       // default state
-      @apply text-neutral-700;
+      @apply text-neutral-900;
       //hover state
-      @apply hover:text-neutral-800;
+      @apply hover:bg-neutral-50 hover:text-neutral-800;
       //press state
-      @apply active:text-neutral-900;
+      @apply active:bg-neutral-100 active:text-neutral-700;
     }
   }
 
@@ -126,23 +126,23 @@
     @include unify-parent(".van-btn-fill") {
       // default button
       // default state
-      @apply bg-neutral-25 text-neutral-900;
+      @apply bg-neutral-50 text-neutral-900;
       //hover state
-      @apply hover:bg-neutral-100;
+      @apply hover:bg-neutral-25;
       //press state
       @apply active:bg-neutral-200;
       //disabled
-      @apply disabled:text-neutral-500;
+      @apply disabled:bg-neutral-300 disabled:text-neutral-500;
     }
 
     // white outlined button
     @include unify-parent(".van-btn-outlined") {
       // default state
-      @apply text-neutral-25 outline-neutral-25;
+      @apply text-neutral-50 outline-neutral-50;
       //hover state
-      @apply hover:text-neutral-100 hover:outline-neutral-100;
+      @apply hover:bg-neutral-800 hover:text-neutral-25 hover:outline-neutral-25;
       //press state
-      @apply active:bg-neutral-800 active:text-neutral-200 active:outline-neutral-200;
+      @apply active:bg-neutral-700 active:text-neutral-200 active:outline-neutral-200;
       //disabled
       @apply disabled:text-neutral-700 disabled:outline-neutral-700;
     }
@@ -150,9 +150,9 @@
     //white ghost button
     @include unify-parent(".van-btn-ghost") {
       // default state
-      @apply text-neutral-25;
+      @apply text-neutral-50;
       //hover state
-      @apply hover:text-neutral-100;
+      @apply hover:text-neutral-25;
       //press state
       @apply active:text-neutral-200;
       //disabled
