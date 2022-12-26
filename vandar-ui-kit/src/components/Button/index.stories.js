@@ -16,7 +16,7 @@ export default {
     },
     type: {
       control: 'select',
-      options: ["fill", "ghost", "outlined"],
+      options: ["filled", "inlined", "outlined"],
     },
     iconType: {
       control: 'select',
@@ -51,7 +51,7 @@ export const button = Template.bind({});
 // args
 button.args = {
   size: 'medium',
-  type: 'fill',
+  type: 'filled',
   color: 'teal',
   iconType: 'line',
   beforeIcon: 'arrow-left',

@@ -17,10 +17,10 @@ import type { PropType } from "vue";
 const props = defineProps({
   label: { type: String,},
   type: {
-    default: 'fill',
-    type: String as PropType<"fill" | "ghost" | "outlined">,
+    default: 'filled',
+    type: String as PropType<"filled" | "inlined" | "outlined">,
     validator: (value:string) => {
-      return ["fill" , "ghost" , "outlined"].includes(value)
+      return ["filled" , "inlined" , "outlined"].includes(value)
     }
   },
   color: {

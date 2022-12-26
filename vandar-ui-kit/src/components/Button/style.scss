@@ -11,7 +11,7 @@
   @apply relative;
 
   &-teal {
-    @include unify-parent(".van-btn-fill") {
+    @include unify-parent(".van-btn-filled") {
       // default button
       &:not([disabled]) {
         // default state
@@ -35,8 +35,8 @@
       }
     }
 
-    //teal ghost button
-    @include unify-parent(".van-btn-ghost") {
+    //teal inlined button
+    @include unify-parent(".van-btn-inlined") {
       &:not([disabled]) {
         // default state
         @apply text-teal-700;
@@ -49,7 +49,7 @@
   }
 
   &-red {
-    @include unify-parent(".van-btn-fill") {
+    @include unify-parent(".van-btn-filled") {
       // default button
       &:not([disabled]) {
         // default state
@@ -74,7 +74,7 @@
     }
 
     //red text button
-    @include unify-parent(".van-btn-ghost") {
+    @include unify-parent(".van-btn-inlined") {
       &:not([disabled]) {
         // default state
         @apply text-red-500;
@@ -87,7 +87,7 @@
   }
 
   &-neutral {
-    @include unify-parent(".van-btn-fill") {
+    @include unify-parent(".van-btn-filled") {
       // default button
       &:not([disabled]) {
         // default state
@@ -112,7 +112,7 @@
     }
 
     //neutral text button
-    @include unify-parent(".van-btn-ghost") {
+    @include unify-parent(".van-btn-inlined") {
       // default state
       @apply text-neutral-900;
       //hover state
@@ -123,7 +123,7 @@
   }
 
   &-white {
-    @include unify-parent(".van-btn-fill") {
+    @include unify-parent(".van-btn-filled") {
       // default button
       // default state
       @apply bg-neutral-50 text-neutral-900;
@@ -147,8 +147,8 @@
       @apply disabled:text-neutral-700 disabled:outline-neutral-700;
     }
 
-    //white ghost button
-    @include unify-parent(".van-btn-ghost") {
+    //white inlined button
+    @include unify-parent(".van-btn-inlined") {
       // default state
       @apply text-neutral-50;
       //hover state
@@ -212,7 +212,7 @@
   }
 
   // default diabled state
-  &:not(.van-btn-outline, .van-btn-ghost) {
+  &:not(.van-btn-outline, .van-btn-inlined) {
     @apply disabled:bg-neutral-100;
   }
   @apply disabled:pointer-events-none disabled:text-neutral-400;
