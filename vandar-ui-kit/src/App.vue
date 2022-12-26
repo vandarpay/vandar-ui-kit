@@ -1,5 +1,9 @@
 <template>
   <div class="p-12 dark:bg-neutral-900">
+    <div>
+      <i class="ri-admin-line"></i>
+    </div>
+
     <vanButton size="large" :loading="true" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
     <vanButton label="متن دکمه"></vanButton>
