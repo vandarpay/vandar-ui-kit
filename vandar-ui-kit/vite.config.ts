@@ -1,11 +1,26 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import AutoImport from "unplugin-auto-import/vite";
+import { resolve } from 'path';
+import typescript2 from "rollup-plugin-typescript2";
+
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
+    typescript2({
+      check: false,
+      include: ["src/components/**/*.vue"],
+      tsconfigOverride: {
+        compilerOptions: {
+          sourceMap: true,
+          declaration: true,
+          declarationMap: true,
+        },
+        exclude: ["vite.config.ts", "main.ts"],
+      },
+    }),
     AutoImport({
       // targets to transform
       include: [
@@ -56,5 +71,19 @@ export default defineConfig({
         globalsPropValue: true // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
       }
     })
-  ]
+  ],
+  build:{
+    lib: {
+      entry: resolve(__dirname, 'src/index.ts'),
+      formats: ['es', 'cjs'],
+      fileName: (format) => (format === "es" ? "index.js" : "index.cjs"),
+    },
+    rollupOptions: {
+      external: ['vue'],
+      output: {
+        preserveModules: true,
+        exports: 'named'
+      }
+    }
+  }
 });
