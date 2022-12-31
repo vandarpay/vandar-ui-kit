@@ -22,12 +22,6 @@ export default {
       control: 'select',
       options: ["line" , "fill"],
     },
-    beforeIcon: {
-      control: 'string'
-    },
-    afterIcon: {
-      control: 'string'
-    }
   },
 };
 
@@ -44,7 +38,7 @@ const Template = (args) => ({
     };
   },
   // bound
-  template: '<van-button v-bind="args" /> <div><i class="ri-admin-line"></i></div>',
+  template: '<van-button v-bind="args" />',
 });
 
 export const button = Template.bind({});
@@ -61,16 +55,3 @@ button.args = {
   loading: false,
   label: 'متن دکمه',
 };
-
-export const isIcon = Template.bind({});
-
-isIcon.args= {
-  size: 'medium',
-  type: 'filled',
-  color: 'teal',
-  iconType: 'line',
-  beforeIcon: 'arrow-left',
-  disabled: false,
-  loading: false,
-  isIcon: true,
-}
