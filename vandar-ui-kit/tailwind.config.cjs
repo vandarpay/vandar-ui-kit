@@ -18,6 +18,11 @@ module.exports = {
     colors,
     fontSize,
     spacing,
-    screens
+    screens,
+    fontFamily: {
+      'yekan-bakh': ['yekan-bakh'],
+      'yekan-faNum-bold': ['yekan-faNum-bold'],
+      'yekan-faNum-regular': ['yekan-faNum-regular'],
+    }
   },
 };

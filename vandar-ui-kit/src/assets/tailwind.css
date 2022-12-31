@@ -1,9 +1,15 @@
+@import url(fonts/fonts.css);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @layer base {
     body{
         direction: rtl;
     }
+    html {
+        @apply font-yekan-bakh;
+      }
 }
