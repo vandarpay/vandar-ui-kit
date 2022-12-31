@@ -16,8 +16,18 @@ export default {
     },
     type: {
       control: 'select',
-      options: ["fill", "ghost", "outlined"],
+      options: ["filled", "inlined", "outlined"],
     },
+    iconType: {
+      control: 'select',
+      options: ["line" , "fill"],
+    },
+    beforeIcon: {
+      control: 'string'
+    },
+    afterIcon: {
+      control: 'string'
+    }
   },
 };
 
@@ -41,8 +51,11 @@ export const button = Template.bind({});
 // args
 button.args = {
   size: 'medium',
-  type: 'fill',
+  type: 'filled',
   color: 'teal',
+  iconType: 'line',
+  beforeIcon: 'arrow-left',
+  afterIcon: 'arrow-right',
   disabled: false,
   loading: false,
   label: 'متن دکمه',

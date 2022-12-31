@@ -7,11 +7,11 @@
   }
 }
 
-.btn {
+.van-btn {
   @apply relative;
 
   &-teal {
-    @include unify-parent(".btn-fill") {
+    @include unify-parent(".van-btn-filled") {
       // default button
       &:not([disabled]) {
         // default state
@@ -24,32 +24,32 @@
     }
 
     // teal outlined button
-    @include unify-parent(".btn-outlined") {
+    @include unify-parent(".van-btn-outlined") {
       &:not([disabled]) {
         // default state
         @apply text-teal-700 outline-teal-700;
         //hover state
-        @apply hover:text-teal-600 hover:outline-teal-600;
+        @apply hover:bg-teal-25 hover:text-teal-600 hover:outline-teal-600;
         //press state
-        @apply active:text-teal-800 active:outline-teal-800;
+        @apply active:bg-teal-100 active:text-teal-800 active:outline-teal-800;
       }
     }
 
-    //teal ghost button
-    @include unify-parent(".btn-ghost") {
+    //teal inlined button
+    @include unify-parent(".van-btn-inlined") {
       &:not([disabled]) {
         // default state
         @apply text-teal-700;
         //hover state
-        @apply hover:text-teal-600;
+        @apply hover:bg-teal-25 hover:text-teal-600;
         //press state
-        @apply active:text-teal-800;
+        @apply active:bg-teal-100 active:text-teal-800;
       }
     }
   }
 
   &-red {
-    @include unify-parent(".btn-fill") {
+    @include unify-parent(".van-btn-filled") {
       // default button
       &:not([disabled]) {
         // default state
@@ -62,32 +62,32 @@
     }
 
     // red outline button
-    @include unify-parent(".btn-outlined") {
+    @include unify-parent(".van-btn-outlined") {
       &:not([disabled]) {
         // default state
         @apply text-red-500 outline-red-500;
         //hover state
-        @apply hover:text-red-400 hover:outline-red-400;
+        @apply hover:bg-red-50 hover:text-red-400 hover:outline-red-400;
         //press state
-        @apply active:bg-red-100 active:text-red-600  active:outline-red-600;
+        @apply active:bg-red-100 active:bg-red-100 active:text-red-600  active:outline-red-600;
       }
     }
 
     //red text button
-    @include unify-parent(".btn-ghost") {
+    @include unify-parent(".van-btn-inlined") {
       &:not([disabled]) {
         // default state
         @apply text-red-500;
         //hover state
-        @apply hover:text-red-400;
+        @apply hover:bg-red-50 hover:text-red-400;
         //press state
-        @apply active:text-red-600;
+        @apply active:bg-red-100 active:text-red-600;
       }
     }
   }
 
   &-neutral {
-    @include unify-parent(".btn-fill") {
+    @include unify-parent(".van-btn-filled") {
       // default button
       &:not([disabled]) {
         // default state
@@ -100,59 +100,59 @@
     }
 
     // neutral outlined button
-    @include unify-parent(".btn-outlined") {
+    @include unify-parent(".van-btn-outlined") {
       &:not([disabled]) {
         // default state
-        @apply text-neutral-700 outline-neutral-700;
+        @apply text-neutral-900 outline-neutral-900;
         //hover state
-        @apply hover:text-neutral-800 hover:outline-neutral-800;
+        @apply hover:bg-neutral-50 hover:text-neutral-800 hover:outline-neutral-800;
         //press state
-        @apply active:bg-neutral-200 active:text-neutral-800  active:outline-neutral-800;
+        @apply active:bg-neutral-100 active:bg-neutral-200 active:text-neutral-700  active:outline-neutral-700;
       }
     }
 
     //neutral text button
-    @include unify-parent(".btn-ghost") {
+    @include unify-parent(".van-btn-inlined") {
       // default state
-      @apply text-neutral-700;
+      @apply text-neutral-900;
       //hover state
-      @apply hover:text-neutral-800;
+      @apply hover:bg-neutral-50 hover:text-neutral-800;
       //press state
-      @apply active:text-neutral-900;
+      @apply active:bg-neutral-100 active:text-neutral-700;
     }
   }
 
   &-white {
-    @include unify-parent(".btn-fill") {
+    @include unify-parent(".van-btn-filled") {
       // default button
       // default state
-      @apply bg-neutral-25 text-neutral-900;
+      @apply bg-neutral-50 text-neutral-900;
       //hover state
-      @apply hover:bg-neutral-100;
+      @apply hover:bg-neutral-25;
       //press state
       @apply active:bg-neutral-200;
       //disabled
-      @apply disabled:text-neutral-500;
+      @apply disabled:bg-neutral-300 disabled:text-neutral-500;
     }
 
     // white outlined button
-    @include unify-parent(".btn-outlined") {
+    @include unify-parent(".van-btn-outlined") {
       // default state
-      @apply text-neutral-25 outline-neutral-25;
+      @apply text-neutral-50 outline-neutral-50;
       //hover state
-      @apply hover:text-neutral-100 hover:outline-neutral-100;
+      @apply hover:bg-neutral-800 hover:text-neutral-25 hover:outline-neutral-25;
       //press state
-      @apply active:bg-neutral-800 active:text-neutral-200 active:outline-neutral-200;
+      @apply active:bg-neutral-700 active:text-neutral-200 active:outline-neutral-200;
       //disabled
       @apply disabled:text-neutral-700 disabled:outline-neutral-700;
     }
 
-    //white ghost button
-    @include unify-parent(".btn-ghost") {
+    //white inlined button
+    @include unify-parent(".van-btn-inlined") {
       // default state
-      @apply text-neutral-25;
+      @apply text-neutral-50;
       //hover state
-      @apply hover:text-neutral-100;
+      @apply hover:text-neutral-25;
       //press state
       @apply active:text-neutral-200;
       //disabled
@@ -166,38 +166,76 @@
     //disabled state
     @apply disabled:outline-neutral-400;
 
-    @include unify-parent(".btn-small") {
+    @include unify-parent(".van-btn-small") {
     // default state
     @apply outline-[1.5px] outline-offset-[-1.5px];
     }
 
-    @include unify-parent(".btn-medium") {
+    @include unify-parent(".van-btn-medium") {
       // default state
       @apply outline-[1.5px] outline-offset-[-1.5px];
       }
 
       
-    @include unify-parent(".btn-large") {
+    @include unify-parent(".van-btn-large") {
       @apply outline-[2px] -outline-offset-2;
     }
   }
 
   &-small {
-    @apply px-8 py-4 text-button-12-semibold min-w-[80px];
+    @apply px-8 text-button-12-semibold min-w-[80px] h-[28px];
+    
+    .van-icon{
+      width: 14px;
+      height: 14px;
+      font-size: 10px; 
+    }
+
+    &.isIcon{
+      width: 28px
+    }
   }
 
   &-medium {
     // default state
-    @apply px-12 py-8 text-button-14-semibold min-w-[96px];
+    @apply px-12 text-button-14-semibold min-w-[96px] h-[40px];
+    .van-icon{
+      width: 16px;
+      height: 16px;
+      font-size: 11px; 
+    }
+    &.isIcon{
+      width: 40px
+    }
   }
 
   &-large {
-    @apply px-16 py-12 text-button-16-semibold min-w-[120px];
+    @apply px-16 text-button-16-semibold min-w-[120px] h-[48px];
+
+    .van-icon{
+      width: 20px;
+      height: 20px;
+      font-size: 14px; 
+    }
+
+    &.isIcon{
+      width: 48px
+    }
+  }
+
+  &.isIcon{
+    min-width: unset;
   }
 
   // default diabled state
-  &:not(.btn-outline, .btn-ghost) {
+  &:not(.van-btn-outline, .van-btn-inlined) {
     @apply disabled:bg-neutral-100;
   }
   @apply disabled:pointer-events-none disabled:text-neutral-400;
+
+  .van-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
 }
