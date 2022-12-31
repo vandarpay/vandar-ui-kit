@@ -22,12 +22,6 @@ export default {
       control: 'select',
       options: ["line" , "fill"],
     },
-    beforeIcon: {
-      control: 'string'
-    },
-    afterIcon: {
-      control: 'string'
-    }
   },
 };
 
@@ -48,6 +42,7 @@ const Template = (args) => ({
 });
 
 export const button = Template.bind({});
+
 // args
 button.args = {
   size: 'medium',

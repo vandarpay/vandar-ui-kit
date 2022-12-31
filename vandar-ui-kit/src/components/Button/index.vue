@@ -1,11 +1,11 @@
 <template>
-  <button :class="[`van-btn van-btn-${color} van-btn-${type} van-btn-${size} ${width?.length ? `w-[${width}]` : ''} `,
+  <button :class="[`van-btn van-btn-${color} van-btn-${type} van-btn-${size} ${isFull ? `w-full` : ''} `,
   {'loading':loading, 'isIcon':isIcon}]" :disabled="disabled || loading">
-    <i v-if="beforeIcon?.length" :class="`ri-${beforeIcon}-${iconType} van-icon`"></i>
-     <span v-if="label" :class="{'opacity-0':loading}">
+    <i v-if="beforeIcon?.length && !loading" :class="`ri-${beforeIcon}-${iconType} van-icon`"></i>
+     <span v-if="label && !isIcon" :class="{'opacity-0':loading}">
       {{ label }}
      </span>
-     <i v-if="afterIcon?.length" :class="`ri-${afterIcon}-${iconType} van-icon`"></i>
+     <i v-if="afterIcon?.length && !loading" :class="`ri-${afterIcon}-${iconType} van-icon`"></i>
     <div v-if="loading" class="loading">
     <img class="animate-spin" src="../../assets/svg/loading.svg"/>
     </div>
@@ -38,8 +38,8 @@ const props = defineProps({
       return ["large" , "medium" , "small"].includes(value)
     }
   },
-  width: {
-    type: String,
+  isFull: {
+    type: Boolean
   },
   iconType:{
     default:'line',
@@ -64,8 +64,4 @@ const props = defineProps({
     type: Boolean,
   },
 });
-
-const widthClass = computed(() =>{
-  return `w-[${props.width}]`
-})
 </script>
