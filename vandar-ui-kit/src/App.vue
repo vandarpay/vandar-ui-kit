@@ -14,7 +14,7 @@
     <div class="pt-12"></div>
     <vanButton size="small" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton size="large" type="outlined" width="500px" label="ddddمتن دکمه"></vanButton>
+    <vanButton size="large" type="outlined" :isFull="true" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
     <vanButton type="inlined" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
