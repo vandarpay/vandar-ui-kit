@@ -1,10 +1,11 @@
 <template>
-  <button :class="[`van-btn van-btn-${color} van-btn-${type} van-btn-${size} flex items-center justify-center`,{'loading':loading}]" :disabled="disabled || loading">
-    <i v-if="beforeIcon?.length" :class="`ri-${beforeIcon}-${iconType} van-icon ml-8`"></i>
-     <span :class="{'opacity-0':loading}">
+  <button :class="[`van-btn van-btn-${color} van-btn-${type} van-btn-${size} 
+  flex items-center justify-center gap-8`,{'loading':loading}, {'isIcon':isIcon}, width ? `w-${width}`:'']" :disabled="disabled || loading">
+    <i v-if="beforeIcon?.length" :class="`ri-${beforeIcon}-${iconType} van-icon`"></i>
+     <span v-if="label" :class="{'opacity-0':loading}">
       {{ label }}
      </span>
-     <i v-if="afterIcon?.length" :class="`ri-${afterIcon}-${iconType} van-icon mr-8`"></i>
+     <i v-if="afterIcon?.length" :class="`ri-${afterIcon}-${iconType} van-icon`"></i>
     <div v-if="loading" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
     <img class="animate-spin" src="../../assets/svg/loading.svg"/>
     </div>
@@ -37,6 +38,9 @@ const props = defineProps({
       return ["large" , "medium" , "small"].includes(value)
     }
   },
+  width: {
+    type: String,
+  },
   iconType:{
     default:'line',
     type: String as PropType<"line" | "fill">,
@@ -44,8 +48,11 @@ const props = defineProps({
       return ["line" , "fill"].includes(value)
     }
   },
+  isIcon: {
+    type: Boolean
+  },
   beforeIcon: {
-    type: String,
+    type:  String,
   },
   afterIcon: {
     type: String,
@@ -58,5 +65,7 @@ const props = defineProps({
   },
 });
 
-
+const widthClass = computed(() =>{
+  return `w-[${props.width}]`
+})
 </script>

@@ -6,11 +6,15 @@
 
     <vanButton size="large" :loading="true" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton :after-icon="'arrow-left'"></vanButton>
+    <vanButton :after-icon="'arrow-left'" :isIcon="true" size="small"></vanButton>
+    <div class="pt-12"></div>
+    <vanButton :after-icon="'arrow-left'" :isIcon="true" type="outlined"></vanButton>
+    <div class="pt-12"></div>
+    <vanButton :after-icon="'arrow-left'" :isIcon="true" size="large" type="inlined"></vanButton>
     <div class="pt-12"></div>
     <vanButton size="small" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton size="large" type="outlined" label="متن دکمه"></vanButton>
+    <vanButton size="large" type="outlined" width="full" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
     <vanButton type="inlined" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>

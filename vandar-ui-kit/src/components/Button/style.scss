@@ -184,10 +184,15 @@
 
   &-small {
     @apply px-8 text-button-12-semibold min-w-[80px] h-[28px];
+    
     .van-icon{
       width: 14px;
       height: 14px;
       font-size: 10px; 
+    }
+
+    &.isIcon{
+      width: 28px
     }
   }
 
@@ -199,6 +204,9 @@
       height: 16px;
       font-size: 11px; 
     }
+    &.isIcon{
+      width: 40px
+    }
   }
 
   &-large {
@@ -209,6 +217,14 @@
       height: 20px;
       font-size: 14px; 
     }
+
+    &.isIcon{
+      width: 48px
+    }
+  }
+
+  &.isIcon{
+    min-width: unset;
   }
 
   // default diabled state
