@@ -1,12 +1,12 @@
 <template>
-  <button :class="[`van-btn van-btn-${color} van-btn-${type} van-btn-${size} 
-  flex items-center justify-center gap-8`,{'loading':loading}, {'isIcon':isIcon}, width ? `w-${width}`:'']" :disabled="disabled || loading">
+  <button :class="[`van-btn van-btn-${color} van-btn-${type} van-btn-${size} ${width?.length ? `w-[${width}]` : ''} `,
+  {'loading':loading, 'isIcon':isIcon}]" :disabled="disabled || loading">
     <i v-if="beforeIcon?.length" :class="`ri-${beforeIcon}-${iconType} van-icon`"></i>
      <span v-if="label" :class="{'opacity-0':loading}">
       {{ label }}
      </span>
      <i v-if="afterIcon?.length" :class="`ri-${afterIcon}-${iconType} van-icon`"></i>
-    <div v-if="loading" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+    <div v-if="loading" class="loading">
     <img class="animate-spin" src="../../assets/svg/loading.svg"/>
     </div>
   </button>
