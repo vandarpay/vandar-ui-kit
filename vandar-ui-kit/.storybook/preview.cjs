@@ -1,4 +1,6 @@
 import 'tailwindcss/tailwind.css';
+import 'remixicon/fonts/remixicon.css'
+
 export const parameters = {
   actions: {
     argTypesRegex: "^on[A-Z].*"
