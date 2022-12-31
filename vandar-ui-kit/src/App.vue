@@ -8,13 +8,13 @@
     <div class="pt-12"></div>
     <vanButton :after-icon="'arrow-left'" :isIcon="true" size="small"></vanButton>
     <div class="pt-12"></div>
-    <vanButton :after-icon="'arrow-left'" :isIcon="true" type="outlined"></vanButton>
+    <vanButton :before-icon="'arrow-left'" :isIcon="true" type="outlined"></vanButton>
     <div class="pt-12"></div>
     <vanButton :after-icon="'arrow-left'" :isIcon="true" size="large" type="inlined"></vanButton>
     <div class="pt-12"></div>
     <vanButton size="small" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>
-    <vanButton size="large" type="outlined" width="500px" label="متن دکمه"></vanButton>
+    <vanButton size="large" type="outlined" width="500px" label="ddddمتن دکمه"></vanButton>
     <div class="pt-12"></div>
     <vanButton type="inlined" label="متن دکمه"></vanButton>
     <div class="pt-12"></div>

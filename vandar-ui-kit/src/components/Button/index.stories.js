@@ -44,10 +44,11 @@ const Template = (args) => ({
     };
   },
   // bound
-  template: '<van-button v-bind="args" />',
+  template: '<van-button v-bind="args" /> <div><i class="ri-admin-line"></i></div>',
 });
 
 export const button = Template.bind({});
+
 // args
 button.args = {
   size: 'medium',
@@ -60,3 +61,16 @@ button.args = {
   loading: false,
   label: 'متن دکمه',
 };
+
+export const isIcon = Template.bind({});
+
+isIcon.args= {
+  size: 'medium',
+  type: 'filled',
+  color: 'teal',
+  iconType: 'line',
+  beforeIcon: 'arrow-left',
+  disabled: false,
+  loading: false,
+  isIcon: true,
+}
