@@ -1,7 +1,7 @@
 {
   "name": "vandar-ui-kit",
   "private": false,
-  "version": "0.0.26",
+  "version": "0.0.29",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
@@ -12,8 +12,9 @@
   "scripts": {
     "lint:js": "eslint src --ext .ts,.vue",
     "dev": "vite",
-    "build": "vue-tsc && vite build && yarn build:styles && yarn build:twPresets",
+    "build": "vue-tsc && vite build && yarn build:styles && yarn build:twPresets && yarn build:fonts",
     "build:twPresets": "mkdir ./dist/twPresets && cp -r ./designTokens ./dist/twPresets && cp tailwind.config.cjs ./dist/twPresets/twPresets.cjs",
+    "build:fonts": "mkdir ./dist/fonts && cp -r ./src/assets/fonts ./dist/",
     "build:styles": "postcss src/assets/tailwind.css -o dist/index.css",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",

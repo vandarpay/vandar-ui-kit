@@ -1,4 +1,17 @@
-@import url(fonts/fonts.css);
+@font-face {
+    font-family: "yekan-faNum-regular";
+    src: url("./fonts/yekan-bakh/YekanBakhFaNum-Regular.ttf");
+  }
+
+@font-face {
+    font-family: "yekan-faNum-bold";
+    src: url("./fonts/yekan-bakh/YekanBakhFaNum-Bold.ttf");
+  }
+
+@font-face {
+    font-family: "yekan-bakh";
+    src: url("./fonts/yekan-bakh/YekanBakh-VF.ttf");
+  }
 
 @tailwind base;
 @tailwind components;
