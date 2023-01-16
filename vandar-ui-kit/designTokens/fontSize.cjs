@@ -35,6 +35,20 @@ module.exports = {
                 fontWeight: "725"
             }
         ],
+        "ltitle-4-bold": [
+            "32px",
+            {
+                lineHeight: "44px",
+                fontWeight: "600"
+            }
+        ],
+        "ltitle-4-exbold": [
+            "32px",
+            {
+                lineHeight: "44px",
+                fontWeight: "725"
+            }
+        ],
         "ltitle-3-bold": [
             "36px",
             {
@@ -42,31 +56,38 @@ module.exports = {
                 fontWeight: "600"
             }
         ],
+        "title-1-exbold": [
+            "28px",
+            {
+                lineHeight: "40px",
+                fontWeight: "725"
+            }
+        ],
         "title-1-bold": [
             "28px",
             {
-                lineHeight: "32px",
+                lineHeight: "40px",
                 fontWeight: "600"
             }
         ],
         "title-1": [
             "28px",
             {
-                lineHeight: "32px",
+                lineHeight: "40px",
                 fontWeight: "325"
             }
         ],
         "title-2-bold": [
             "24px",
             {
-                lineHeight: "28px",
+                lineHeight: "36px",
                 fontWeight: "600"
             }
         ],
         "title-2": [
             "24px",
             {
-                lineHeight: "28px",
+                lineHeight: "36px",
                 fontWeight: "325px"
             }
         ],
@@ -130,14 +151,14 @@ module.exports = {
         "body-2-bold": [
             "14px",
             {
-                lineHeight: "20px",
+                lineHeight: "22px",
                 fontWeight: "600"
             }
         ],
         "body-2": [
             "14px",
             {
-                lineHeight: "20px",
+                lineHeight: "22px",
                 fontWeight: "325"
             }
         ],
